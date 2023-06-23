@@ -1,0 +1,55 @@
+ [{
+         "id": "1",
+         "nombre": "Casa, 3 dormitorios",
+         "operacion": "Alquiler",
+         "ubicacion": "Zona Norte, B° Cerro de las Rosas - Córdoba",
+         "imagen": "./imagenes/casa.jpg"
+     },
+     {
+         "id": "2",
+         "nombre": "Departamento, 2 dormitorios",
+         "operacion": "Venta",
+         "ubicacion": "Zona Sur, B° General Paz - Córdoba",
+         "imagen": "./imagenes/departamento.jpg"
+     },
+
+     {
+         "id": "3",
+         "nombre": "Casa, 3 dormitorios",
+         "operacion": "Venta",
+         "ubicacion": "Zona Sur, B° Junior - Córdoba",
+         "imagen": "./imagenes/casa.jpg"
+     },
+
+     {
+         "id": "4",
+         "nombre": "Terreno, 400 mts",
+         "operacion": "Venta",
+         "ubicacion": "Zona Sur, Prados de manantiales - Córdoba",
+         "imagen": "./imagenes/terreno.jpg"
+     },
+
+     {
+         "id": "5",
+         "nombre": "Terreno, 350 mts",
+         "operacion": "Venta",
+         "ubicacion": "Zona Sur, Terrazas de manantiales - Córdoba",
+         "imagen": "./imagenes/terreno.jpg"
+     },
+
+     {
+         "id": "6",
+         "nombre": "Departamento, 3 dormitorios",
+         "operacion": "Alquiler",
+         "ubicacion": "Zona Centro - Córdoba",
+         "imagen": "./imagenes/departamento.jpg"
+     },
+
+     {
+         "id": "7",
+         "nombre": "Departamento, 2 dormitorios",
+         "operacion": "Venta",
+         "ubicacion": "Zona Sur - Rio III",
+         "imagen": "./imagenes/departamento.jpg"
+     }  
+ ]

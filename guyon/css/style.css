@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Mukta:wght@600&family=Poppins:wght@300&family=Raleway:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Mukta:wght@600&family=Open+Sans&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerHeader {
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(117, 9, 9);
+}
+
+.sectionLogo {
+    width: 100%;
+    color: white;
+    font-family: 'Open Sans',
+        sans-serif;
+}
+
+
+.divLogo {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+h1 {
+    font-size: xx-large;
+    font-weight: 500;
+    text-align: center;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.sectionNavbar {
+    width: 100%;
+    height: 230px;
+    background: rgb(233, 237, 237);
+    background: linear-gradient(0deg, rgba(233, 237, 237, 1) 37%, rgba(172, 169, 172, 1) 100%);
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 18px;
+
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav ul li {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 2px;
+    padding: 5px;
+    width: 90px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+}
+
+a:hover {
+    color: black;
+    text-decoration-line: underline;
+}
+
+.sectionButton {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+
+.fondoMain {
+    width: 100%;
+    height: auto;
+    background-color: rgb(87, 86, 86);
+    margin-top: 1px;
+    position: relative;
+}
+
+#fondoMainPropiedades {
+    background-color: rgb(169, 168, 168);
+}
+
+.bordeMain {
+    width: 100%;
+    height: 45px;
+    top: 0;
+    left: 0;
+    background-color: rgb(54, 54, 54);
+    position: absolute;
+}
+
+
+.sectionServicios {
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../imagenes/imgMain.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.containerServicios {
+    width: 90%;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+}
+
+
+.fondoServicios {
+    width: 60%;
+    height: 85vh;
+    background: black;
+    opacity: .6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h2 {
+    font-size: xx-large;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.parrMain {
+    font-size: large;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.parrafitoMain {
+    margin-top: 10px;
+}
+
+main section ul li {
+    list-style-type: none;
+}
+
+.bordeServicios {
+    width: 60%;
+    height: 10px;
+    background-color: rgb(27, 27, 27);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    width: 100%;
+
+}
+
+.colorFooter {
+    background: rgb(233, 237, 237);
+    background: linear-gradient(0deg, rgba(233, 237, 237, 1) 37%, rgba(172, 169, 172, 1) 100%);
+    width: 100%;
+}
+
+.infoFooter {
+    height: 300px;
+    background-color: rgb(117, 9, 9);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.borderFooter {
+    padding: 10px;
+}
+
+footer .infoFooter p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.iconFooter {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconFooter a {
+    color: white;
+    font-size: large;
+}
+
+
+/*areas*/
+
+header {
+    grid-area: header;
+
+}
+
+main {
+    grid-area: main;
+}
+
+
+footer {
+    grid-area: footer;
+}
+
+
+#grilla {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+
+}
+
+
+
+/*MOBILE TABLET*/
+
+@media(min-width: 768px) {
+
+    #grilla {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-areas: "header"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .containerHeader {
+        width: 100%;
+        height: auto;
+        background-color: rgb(117, 9, 9);
+    }
+
+
+    .sectionLogo {
+        width: 100%;
+        color: white;
+        font-family: 'Open Sans',
+            sans-serif;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+    }
+
+
+    .sectionNavbar {
+        width: 100%;
+        height: 200px;
+        background: rgb(233, 237, 237);
+        background: linear-gradient(0deg, rgba(233, 237, 237, 1) 37%, rgba(172, 169, 172, 1) 100%);
+        font-size: large;
+    }
+
+    #navContacto{
+        margin-top: 30px;
+    }
+
+    nav ul li {
+        text-align: center;
+        list-style-type: none;
+        line-height: 18px;
+        margin-top: 15px;
+        padding: 5px;
+        width: 90px;
+    }
+
+    .sectionButton {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    main {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .bordeMain {
+        width: 100%;
+        height: 45px;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .sectionServicios {
+        width: 80%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../imagenes/imgMain.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    .containerServicios {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .bordeServicios {
+        width: 60%;
+        height: 10px;
+        background-color: rgb(27, 27, 27);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        font-size: xx-large;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .parrMain {
+        font-size: large;
+        font-weight: 200;
+        margin-top: 30px;
+    }
+
+    .parrafitoMain {
+        margin-top: 10px;
+    }
+
+
+
+    footer {
+        width: 100%;
+    }
+
+    .colorFooter {
+        background: rgb(233, 237, 237);
+        background: linear-gradient(0deg, rgba(233, 237, 237, 1) 37%, rgba(172, 169, 172, 1) 100%);
+        width: 100%;
+        height: 30px;
+    }
+
+    .infoFooter {
+        background-color: rgb(117, 9, 9);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        width: 100%;
+        height: 70px;
+    }
+
+
+    #footerContenido {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    .borderFooter {
+        border-left: 1px solid white;
+        padding: 10px;
+    }
+
+
+    .iconFooter {
+        display: flex;
+        gap: 15px;
+    }
+
+    .iconFooter a {
+        color: white;
+        font-size: large;
+    }
+
+}
+
+
+/*DESKTOP*/
+
+@media(min-width: 1024px) {
+
+
+
+
+    body {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerHeader {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(117, 9, 9);
+        padding: 0px;
+    }
+
+    .sectionLogo {
+        width: 100%;
+        color: white;
+        font-family: 'Open Sans',
+            sans-serif;
+        position: relative;
+       
+    }
+
+    .divLogo {
+        position: absolute;
+        left: 90px;
+        width: 87px;
+    }
+
+    h1 {
+        font-size: xx-large;
+        font-weight: 500;
+    }
+
+    span {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+    }
+
+    .sectionNavbar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        background: rgb(233, 237, 237);
+        background: linear-gradient(0deg, rgba(233, 237, 237, 1) 37%, rgba(172, 169, 172, 1) 100%);
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #navContacto {
+        margin-top: 0px;
+    }
+
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    nav ul li {
+        list-style-type: none;
+        padding: 5px;
+        width: 170px;
+        justify-content: flex-start;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(3, 3, 3);
+    }
+
+    .sectionButton {
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+
+    main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .fondoMain {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(87, 86, 86);
+        margin-top: 1px;
+    }
+
+
+    .bordeMain {
+        width: 100%;
+        height: 40px;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    #contenedorPropiedades {
+        margin: 20px;
+    }
+
+    .sectionServicios {
+        width: 80%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../imagenes/imgMain.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    .containerServicios {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-y: auto;
+    }
+
+    .fondoServicios {
+        width: 40%;
+        height: 97%;
+        background: black;
+        opacity: .6;
+        margin-left: 10%;
+    }
+
+    h2 {
+        font-size: xx-large;
+        font-weight: 500;
+        text-align: left;
+    }
+
+
+    .bordeServicios {
+        width: 40%;
+        height: 10px;
+        background-color: rgb(27, 27, 27);
+        margin-left: 10%;
+    }
+
+
+    .parrMain {
+        font-size: x-large;
+        font-weight: 200;
+        margin-bottom: 10px;
+    }
+
+    .parrafitoMain {
+        margin-top: 5px;
+    }
+
+    main section ul li {
+        list-style-type: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+
+    .colorFooter {
+        background: rgb(233, 237, 237);
+        background: linear-gradient(0deg, rgba(233, 237, 237, 1) 37%, rgba(172, 169, 172, 1) 100%);
+        width: 100%;
+        height: 25px;
+    }
+
+
+    .infoFooter {
+        background-color: rgb(117, 9, 9);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        width: 100%;
+        height: 120px;
+    }
+
+
+    #footerContenido {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    .borderFooter {
+        border-left: 1px solid white;
+        padding: 10px;
+    }
+
+
+    .iconFooter {
+        display: flex;
+        gap: 15px;
+    }
+
+    .iconFooter a {
+        color: white;
+        font-size: large;
+    }
+
+
+    #grilla {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "header"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 3fr auto;
+
+    }
+
+}
